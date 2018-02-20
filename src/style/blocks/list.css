@@ -1,0 +1,36 @@
+.list {
+	display: flex;
+	padding: 0 60px;
+}
+
+.list__item {
+	width: calc(100% /3);
+	margin-right: 100px;
+}
+
+.list__item:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 1025px) {
+
+	.list {
+		padding: 0 30px;
+	}
+
+	.list__item {
+		margin-right: 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	.list {
+		display: block;
+	}
+
+	.list__item {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}

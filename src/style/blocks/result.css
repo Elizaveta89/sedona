@@ -1,0 +1,292 @@
+.result {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	padding: 30px 70px;
+}
+
+.result .title {
+	width: 20%;
+	margin: 0;
+	text-align: left;
+}
+
+.result-filter {
+	width: 70%;
+	display: flex;
+	align-item: center;
+	text-transform: uppercase;
+}
+
+.result-filter .active {
+	color: #95bed8;
+	border-bottom: 1px dotted transparent;
+}
+
+.result-filter__title {
+	margin-right: 40px;
+}
+
+.result-filter__item {
+	border-bottom: 1px dotted #95bed8;
+	color: #d1d1d1;
+	margin-right: 40px;
+	cursor: pointer;
+}
+
+.result-filter__item:hover {
+	color: #95bed8;
+} 
+
+.result-filter__item:active {
+	color: #000;
+	border-bottom: 1px dotted transparent;
+}
+
+.result-arrow {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 10%;
+	color: #cacaca;
+	text-align: right;
+	cursor: pointer;
+}
+
+.result-arrow__up {
+	margin-right: 10px;
+}
+
+.result-arrow__up:hover,
+.result-arrow__down:hover {
+	color: #000;
+}
+
+.result-arrow__up:active,
+.result-arrow__down:active {
+	color: #81b3d2;
+}
+
+.result-table {
+	border-collapse: collapse;
+    border-spacing: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.result-table tr {
+	border-top: 1px solid #e5e5e5;
+}
+
+.result-table tr:last-child {
+	border-bottom: 1px solid #e5e5e5;
+} 
+
+.result-table td {
+	padding: 28px 0px;
+}
+
+.result-table td:first-child {
+	width: 20%;
+	padding-left: 70px;
+}
+
+.result-table td:last-child {
+	width: 15%;
+	padding-right: 70px;
+}
+
+.result-table__img {
+	width: 137px;
+	height: 93px;
+}
+
+.result-table__img img {
+	width: 100%;
+	height: 100%;
+}
+
+.result-table__title {
+	display: block;
+	font-size: 21px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.result-table__title:hover {
+	color: #81b3d2;
+}
+
+.result-table__title:active {
+	color: #cecece;
+}
+
+.result-table__inline {
+	display: flex;
+	alidn-items: center;
+	margin-bottom: 8px;
+}
+
+.result-table__inline .text {
+	width: 14%;
+	margin-right: 30px;
+}
+
+.result-table__btn {
+	font-size: 14px;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.result-table__btn--blue {
+	background: #81b3d2;
+}
+
+.result-table__btn--blue:hover {
+	background: #669ec0;
+}
+
+.result-table__btn--blue:active {
+	background: #5496bd;
+	color: #94b9d2;
+}
+
+.result-table__btn--brown {
+	background: #766357;
+}
+
+.result-table__btn--brown:hover {
+	background: #604e43;
+}
+
+.result-table__btn--brown:active {
+	background: #503e33;
+	color: #928a85;
+}
+
+.result-table__stars {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 40px;
+}
+
+.result-table__stars .stars {
+	margin-right: 5px;
+}
+
+.result-table__stars .icon {
+	fill: #81b3d2;
+}
+
+.result-table__rating {
+	background: #f2f2f2;
+	text-align: center;
+    padding: 5px 10px;
+}
+
+@media (max-width: 1025px) {
+	.result {
+		padding: 30px;
+	}
+
+	.result-table td:first-child {
+		width: 25%;
+		padding-left: 30px;
+	}
+
+	.result-table td:last-child {
+		width: 20%;
+		padding-right: 30px;
+	}
+
+	.result-table__inline .text {
+		width: 27%;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.result {
+		display: block;
+		padding: 10px;
+	}
+
+	.result .title {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.result-filter {
+		display: block;
+		width: 100%;
+	}
+
+	.result-filter__title {
+		margin-bottom: 10px;
+	}
+
+	.result-filter__item {
+		display: inline;
+		margin-right: 20px;
+	}
+
+	.result-arrow {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.result-table td {
+		display: block;
+		float: right;
+		width: 96%;
+		padding: 20px 10px;
+	}
+
+	.result-table td:first-child {
+		width: 67%;
+		display: inline-block;
+		float: none;
+		padding-left: 10px;
+	}
+
+	.result-table td:last-child {
+		width: 25%;
+		display: inline-block;
+		float: none;
+		padding-right: 10px;
+	}
+
+	.result-table__btn {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.result-table__inline {
+		margin-bottom: 15px;
+	}
+
+	.result-table__inline .text {
+		width: 50%;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 500px) {
+
+	.result-table td {
+		width: 94%;
+	}
+
+	.result-table td:first-child {
+		width: 54%;
+	}
+
+	.result-table td:last-child {
+		width: 33%;
+	}
+}

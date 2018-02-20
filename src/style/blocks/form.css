@@ -1,0 +1,151 @@
+.form {
+	text-align: left;
+}
+
+.form__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.form__inline {
+	display: flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.label {
+	width: 20%;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+
+.input {
+	width: 80%;
+	border: none;
+	background: #f2f2f2;
+	padding: 10px 0 10px 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 13px;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+}
+
+.input:hover {
+	background: #ebebeb;
+}
+
+.input:focus {
+	outline: none;
+	border: 1px solid #e5e5e5;
+	background: #fff;
+}
+
+.form__row:hover .input-img svg {
+	fill: #000;
+}
+
+.form__row:active .input-img svg {
+	fill: #81b3d2;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input-img {
+	position: absolute; 
+	right: 5px;
+	top: calc(50% - 12px);
+}
+
+.input-img svg {
+	fill: #a9a9a9;
+}
+
+.form__inline .label {
+    margin-right: 70px;
+}
+
+.form__inline .form__row {
+	margin-right: 90px;
+}
+
+.form__inline .input {
+	width: 35%;
+	padding: 10px 0 10px 14px;
+	margin: 0;
+}
+
+.form__inline button {
+	margin: 0;
+}
+
+.form__inline .form__row:last-child {
+	margin-right: 0;
+}
+
+.form__number {
+	display: flex;
+}
+
+.label--children {
+	margin-right: 20px !important;
+}
+
+@media (max-width: 1025px) { 
+	.form__inline .form__row {
+		margin-right: 70px;
+	}
+}
+
+@media (max-width: 768px) { 
+	.form__row {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.label {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.input {
+		width: 100%;
+	}
+
+	.input-img {
+		position: absolute; 
+		right: 5px;
+		top: calc(50% + 2px);
+	}
+
+	.form__inline {
+		display: block;
+	}
+
+	.form__inline .form__row {
+		display: flex;
+		margin-right: 0;
+	}
+
+	.form__inline .label{
+		width: 20%;
+		margin-right: 40px;
+	}
+
+	.form__inline .form__number {
+		width: 45%;
+	}
+}

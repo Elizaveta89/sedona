@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+	<link href="/css/style.min.css" rel="stylesheet">
+	<title>Поиск отеля</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="hamburger">
+					<div class="hamburger__line"></div>
+				</div>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">Информация</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">фото и видео</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Карта штата</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Гостиницы</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="/" class="logo">
+					<img src="/img/logo.png" alt="" class="logo__img">
+				</a>
+			</div>
+		</header>
+		<main class="main">
+			<section class="section section--light">
+				<div class="filter">
+					<form action="/">
+						<div class="filter__wrapper">
+							<div class="filter__left">
+								<ul class="filter__list">
+									<li class="filter__item">
+										<div class="title title--h3">
+											Инфраструктура:
+										</div>
+									</li>
+									<li class="filter__item">
+										<label>
+											<input class="checkbox" name="checkbox" type="checkbox" id="pool" checked>
+											<span class="checkbox-custom"></span>
+											<span class="checkbox__label" for="pool">
+												бассейн
+											</span>
+										</label>	
+									</li>
+									<li class="filter__item">
+										<label>
+											<input class="checkbox" name="checkbox" type="checkbox" id="parking">
+											<span class="checkbox-custom"></span>
+											<span class="checkbox__label" for="parking">
+												парковка
+											</span>
+										</label>
+									</li>
+									<li class="filter__item">
+										<label>
+											<input class="checkbox" name="checkbox" type="checkbox" id="wifi">
+											<span class="checkbox-custom"></span>
+											<span class="checkbox__label" for="wifi">
+												wi-fi
+											</span>
+										</label>
+									</li>
+								</ul>
+								<ul class="filter__list">
+									<li class="filter__item">
+										<div class="title title--h3">
+											Тип жилья:
+										</div>
+									</li>
+									<li class="filter__item">
+										<label>
+											<input class="checkbox" name="checkbox" type="checkbox" id="hotel" checked>
+											<span class="checkbox-custom"></span>
+											<span class="checkbox__label" for="hotel">
+												гостиница
+											</span>
+										</label>	
+									</li>
+									<li class="filter__item">
+										<label>
+											<input class="checkbox" name="checkbox" type="checkbox" id="motel" checked>
+											<span class="checkbox-custom"></span>
+											<span class="checkbox__label" for="motel">
+												мотель
+											</span>
+										</label>
+									</li>
+									<li class="filter__item">
+										<label>
+											<input class="checkbox" name="checkbox" type="checkbox" id="apartments" checked>
+											<span class="checkbox-custom"></span>
+											<span class="checkbox__label" for="apartments">
+												аппартаменты
+											</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="filter__right">
+								<div class="title title--h3">
+									стоимость в сутки (р):
+								</div>
+								<div class="filter__cost">
+									<div class="text">
+										от 0
+									</div>
+									<div class="text">
+										до 3000
+									</div>
+								</div>
+								<div class="filter__line">
+									<div class="filter__line--bold"></div>	
+								</div>
+								<button type="submit" class="button button--no-fill">Показать</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="section">
+				<div class="result">
+					<div class="title title--h2">
+						Найдено: 3
+					</div>
+					<div class="result-filter">
+						<div class="result-filter__title">
+							сортировка:
+						</div>
+						<div class="result-filter__item active">
+							по цене
+						</div>
+						<div class="result-filter__item">
+							по типу
+						</div>
+						<div class="result-filter__item">
+							по рейтингу
+						</div>
+					</div>
+					<div class="result-arrow">
+						<div class="result-arrow__up">&#9650;</div>
+						<div class="result-arrow__down">&#9660;</div>
+					</div>
+				</div>
+				<table class="result-table">
+					<tr>
+						<td>
+							<div class="result-table__img">
+								<img src="/img/pic-hotel.png" alt="">
+							</div>
+						</td>
+						<td>
+							<a href="#" class="result-table__title">
+								Amara Resort & Spa
+							</a>
+							<div class="result-table__inline">
+								<div class="text">
+									гостиница
+								</div>
+								<div class="text">
+									от 4000 р.
+								</div>
+							</div>
+							<div class="button__list">
+								<button class="result-table__btn result-table__btn--blue">Подробнее</button>
+								<button class="result-table__btn result-table__btn--brown">Забронировать</button>
+							</div>
+						</td>
+						<td>
+							<div class="result-table__stars">
+								<div class="stars">
+									<svg class="icon", width="18", height="18", role="img">
+			        					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-star">	
+			        					</use>
+			      					</svg>
+								</div>
+								<div class="stars">
+									<svg class="icon", width="18", height="18", role="img">
+			        					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-star">	
+			        					</use>
+			      					</svg>
+								</div>
+								<div class="stars">
+									<svg class="icon", width="18", height="18", role="img">
+			        					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-star">	
+			        					</use>
+			      					</svg>
+								</div>
+								<div class="stars">
+									<svg class="icon", width="18", height="18", role="img">
+			        					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-star">	
+			        					</use>
+			      					</svg>
+								</div>
+							</div>
+							<div class="result-table__rating">
+								<div class="text">
+									Рейтинг: 8,5
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="result-table__img">
+								<img src="/img/pic-hotel.png" alt="">
+							</div>
+						</td>
+						<td>
+							<a href="#" class="result-table__title">
+								Desert Quail Inn
+							</a>
+							<div class="result-table__inline">
+								<div class="text">
+									мотель
+								</div>
+								<div class="text">
+									от 3000 р.
+								</div>
+							</div>
+							<div class="button__list">
+								<button class="result-table__btn result-table__btn--blue">Подробнее</button>
+								<button class="result-table__btn result-table__btn--brown">Забронировать</button>
+							</div>
+						</td>
+						<td>
+							<div class="result-table__stars">
+								<div class="stars">
+									<svg class="icon", width="18", height="18", role="img">
+			        					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-star">	
+			        					</use>
+			      					</svg>
+								</div>
+								<div class="stars">
+									<svg class="icon", width="18", height="18", role="img">
+			        					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-star">	
+			        					</use>
+			      					</svg>
+								</div>
+								<div class="stars">
+									<svg class="icon", width="18", height="18", role="img">
+			        					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-star">	
+			        					</use>
+			      					</svg>
+								</div>
+							</div>
+							<div class="result-table__rating">
+								<div class="text">
+									Рейтинг: 8,5
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="result-table__img">
+								<img src="/img/pic-hotel.png" alt="">
+							</div>
+						</td>
+						<td>
+							<a href="#" class="result-table__title">
+								Villas at Poco Diablo
+							</a>
+							<div class="result-table__inline">
+								<div class="text">
+									аппартаменты
+								</div>
+								<div class="text">
+									от 2000 р.
+								</div>
+							</div>
+							<div class="button__list">
+								<button class="result-table__btn result-table__btn--blue">Подробнее</button>
+								<button class="result-table__btn result-table__btn--brown">Забронировать</button>
+							</div>
+						</td>
+						<td>
+							<div class="result-table__stars">
+								<div class="stars">
+									<svg class="icon", width="18", height="18", role="img">
+			        					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-star">	
+			        					</use>
+			      					</svg>
+								</div>
+								<div class="stars">
+									<svg class="icon", width="18", height="18", role="img">
+			        					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-star">	
+			        					</use>
+			      					</svg>
+								</div>
+							</div>
+							<div class="result-table__rating">
+								<div class="text">
+									Рейтинг: 8,5
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<ul class="list">
+					<li class="list__item">
+						<a href="#" class="list__link">
+							<div class="title title--h2">
+								#visitsedona
+							</div>
+						</a>
+					</li>
+					<li class="list__item">
+						<ul class="socials">
+							<li class="socials__item">
+								<a href="#" class="socials__link">
+									<svg class="icon", width="25", height="25", role="img">
+	        					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-tw">	
+	        					</use>
+      					</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a href="#" class="socials__link">
+									<svg class="icon", width="25", height="25", role="img">
+	        					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-fb">	
+	        					</use>
+	      					</svg>
+    						</a>
+							</li>
+							<li class="socials__item">
+								<a href="#" class="socials__link">
+									<svg class="icon", width="25", height="25", role="img">
+        						<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-youtube">
+        						</use>
+      						</svg>
+      					</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list__item">
+						<span class="text">website by</span>
+						<a href="#" class="logo-academy">
+							<svg class="icon", width="118", height="40", role="img">
+      					<use xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="/img/svg-store.svg#icon-logo-academy">
+      					</use>
+    					</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script src="/js/plugins.min.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjGzi0FeYTz939CU4XEUrU5iffafIgQSI&callback=initMap">
+  </script>
+	<script src="/js/scripts.js"></script>
+</body>
+</html>

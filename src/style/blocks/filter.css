@@ -1,0 +1,130 @@
+.filter__wrapper {
+	height: 180px;
+	display: flex;
+	justify-content: space-between;
+	background: url(/img/banner-hotels.png) no-repeat;
+	background-size: cover;
+	background-position: 0 -52px;
+	padding: 30px 70px;
+}
+
+.filter__left {
+	display: flex;
+	width: 50%;
+	margin-right: 100px;
+}
+
+.filter__list {
+	width: 50%;
+}
+
+.filter__item {
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+.filter__item .title {
+	text-align: left;
+}
+
+
+.filter__right {
+	width: 30%;
+} 
+
+.filter__right .title {
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.filter__cost {
+	display: flex;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+.filter__cost .text {
+	width: 50%;
+	text-align: center;
+	border-right: 2px solid;
+	line-height: 1.8;
+}
+
+.filter__cost .text:last-child {
+	border-right: 0;
+} 
+
+.filter__line {
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background: rgba(254,254,254,0.5);
+	margin-bottom: 40px;
+}
+
+.filter__line--bold {
+	position: absolute;
+	width: 80%;
+	height: 2px;
+	background: #fff;
+	text-align: center;
+}
+
+.filter__line--bold:before,
+.filter__line--bold:after {
+	content: '.';
+    position: absolute;
+    top: -10px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	color: #ababab;
+	border-radius: 50%;
+	text-align: center;
+    line-height: 0.3;
+    font-size: 25px;
+    border: 1px solid #ababab;
+    cursor: pointer;
+}
+
+.filter__line--bold:before {
+	left: 0px;
+}
+
+.filter__line--bold:after {
+	right: 0px;
+}
+
+@media (max-width: 1025px) {
+
+	.filter__wrapper {
+		padding: 30px;
+	}
+
+	.filter__left {
+		margin-right: 0;
+	}
+
+	.filter__right {
+		width: 40%;
+	}
+}
+
+@media (max-width: 768px) { 
+	.filter__wrapper {
+	    height: 450px;
+	    display: block;
+	    padding: 25px 10px;
+	}
+
+	.filter__left {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.filter__right {
+		width: 100%;
+	}
+}

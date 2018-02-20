@@ -1,0 +1,19 @@
+.number {
+  margin-bottom: 30px;
+}
+
+.number:before,
+.number:after {
+  content: '';
+  display: inline-block;
+  vertical-align: super;
+  width: 7px;
+  height: 1px;
+  background: #333333;
+}
+
+@media (max-width: 1025px) {
+	.number {
+  		margin-bottom: 20px;
+	}
+}

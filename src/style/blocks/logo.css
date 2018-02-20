@@ -1,0 +1,25 @@
+.logo {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 50%;
+    margin-left: calc(-138px / 2)
+}
+
+.logo-academy {
+	display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.logo-academy .icon {
+	fill: #000;
+}
+
+.logo-academy:hover .icon {
+	fill: #81b3d2;
+}
+
+.logo-academy:active .icon {
+	fill: #c5c4c4;
+}
